@@ -1,8 +1,28 @@
 aid: feetme
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/feetme.png
 name: Feetme
-description: 'Feetme is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'FeetMe is a Paris-based medical device company, founded in 2013, that
+  develops smart connected insoles and digital health software for real-time gait
+  analysis and mobility care. Its CE-marked, ISO 13485 and ISO 9001 certified wearables
+  embed plantar pressure sensors and a 6-axis inertial measurement unit to capture
+  more than twenty gait and balance metrics per step, streaming them over Bluetooth
+  Low Energy to the FeetMe Mobility dashboard used by clinicians for neurological,
+  orthopedic and rehabilitation assessment. Product lines include FeetMe Evaluation,
+  FeetMe Rehabilitation, FeetMe Monitor and FeetMe Stimulate. The company is backed
+  by Partech. FeetMe does not currently expose a public developer API or OpenAPI-described
+  web API; a partner SDK for raw-data integration is referenced in product materials
+  but is not publicly documented.'
 url: https://raw.githubusercontent.com/api-evangelist/feetme/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +30,22 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website-note: 'Portfolio source recorded https://feetmehealth.com/, which no longer
+  resolves to FeetMe (the domain now serves unrelated parked/SEO-spam content). The
+  live company domain is https://feetme.fr/. Website pointer corrected 2026-07-19.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- Medical Devices
+- Digital Health
+- Wearables
+- Gait Analysis
+- Rehabilitation
+- Connected Insoles
+- MedTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +53,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/feetme-domain-security.yml
 - type: Website
-  url: https://feetmehealth.com/
+  url: https://feetme.fr/
+- type: About
+  url: https://feetme.fr/en/about-feetme/
+- type: Support
+  url: https://feetme.fr/en/support-and-downloads
+- type: Contact
+  url: https://feetme.fr/en/contact
+- type: Blog
+  url: https://feetme.fr/en/news
+- type: PrivacyPolicy
+  url: https://feetme.fr/en/confidentiality
+- type: Login
+  url: https://mobility.feetme.fr/dashboard/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/feetme
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
