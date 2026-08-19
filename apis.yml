@@ -33,7 +33,7 @@ x-tier-reason: portfolio-lead
 x-website-note: 'Portfolio source recorded https://feetmehealth.com/, which no longer
   resolves to FeetMe (the domain now serves unrelated parked/SEO-spam content). The
   live company domain is https://feetme.fr/. Website pointer corrected 2026-07-19.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
